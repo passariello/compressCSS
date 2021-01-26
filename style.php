@@ -20,6 +20,7 @@
 		$write_css_content = strtr($write_css_content,':0px',':0');
 		$write_css_content = str_replace('@{CDN}',$GLOBALS['CDN'],$write_css_content);
 		$write_css_content = str_replace('@{TEMPLATE}',$GLOBALS['ARCHIVE'],$write_css_content);
+		$write_css_content = str_replace( "http://","http:\/\/",$write_css_content );
 
 		return $write_css_content;
 	}
