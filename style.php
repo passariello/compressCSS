@@ -1,8 +1,7 @@
 <?php
+# Copyright Dario Passariello (c) 2016
 
-	header("Content-type: text/css; charset: UTF-8");
-	//header("Expires: " . gmdate('D, d m Y H:i:s', time() + 3600) . " GMT");
-
+	header("Content-type: text/css; charset: UTF-8");	
 
 	function CSScompression($line){
 		$write_css_content = $line;
