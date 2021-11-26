@@ -1,0 +1,20 @@
+
+#	Dario Passariello
+#	Copyright 2016
+
+#	web: https://dario.passariello.ca
+#	email: dariopassariello@gmail.com
+
+# REWRITE
+# ***************************************************************************
+#	This file permit to site to recognize style.css like a real file but in
+#	reality it's run the PHP script
+
+  <IfModule mod_rewrite.c>
+
+    RewriteEngine On
+    RewriteBase /
+
+    RewriteRule ^styles.css(.*)$		/include/compressorStyle.php [L]
+
+  </IfModule>
